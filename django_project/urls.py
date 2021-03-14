@@ -20,5 +20,5 @@ urlpatterns = [
     # encounter admin/ then send user to admin.site.urls
     path('admin/', admin.site.urls),
     # encounter blog/ then send user to blog.urls
-    path('blog/', include('blog.urls')),
+    path('', include('blog.urls')),
 ]
