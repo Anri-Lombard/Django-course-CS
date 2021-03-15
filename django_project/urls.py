@@ -19,6 +19,8 @@ from django.urls import path, include
 urlpatterns = [
     # encounter admin/ then send user to admin.site.urls
     path('admin/', admin.site.urls),
+    # encounter register/ then send to users.urls
+    path('users/', include('users.urls')),
     # encounter blog/ then send user to blog.urls
     path('', include('blog.urls')),
 ]
